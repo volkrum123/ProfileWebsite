@@ -1,0 +1,343 @@
+body {
+  background: linear-gradient(to bottom, #1a1a1a, #444444, #cccccc); /* Dark to light grey */
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Sidebar container wraps both the toggle and sidebar */
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 96vh;
+  width: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid white;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding:0;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 1rem 2.5rem;
+  margin-top: 150px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar ul li {
+  margin: 1.5rem 0;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a {
+  color: White;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+/* Toggle Button */
+.sidebar-toggle {
+  position: relative;
+  left: 0;
+  padding: 0.8rem 0.6rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* Hover behavior */
+.sidebar-wrapper:hover .sidebar {
+  width: 180px;
+  padding: 0;
+}
+
+.sidebar-wrapper:hover .sidebar ul {
+  opacity: 1;
+}
+
+.sidebar-wrapper:hover .sidebar-toggle {
+  display: none;
+}
+
+/* Hero Section */
+.ProfileIMG{
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 1rem;
+  height: auto;
+  width: auto;
+  gap: 1rem; /* Optional: space between image and text */
+  margin-bottom: 120px;
+  
+}
+
+.profile-wrapper {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  padding: 8px;
+  background: linear-gradient(135deg, #ffffff, #e7f0fa);
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  margin: 0 auto 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+.H{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../IMG/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+ 
+}
+
+#about,
+#education,
+#skills,
+#soft{
+  
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+
+background: linear-gradient(to bottom right, #2a2a2a, #555555); /* dark inner container */
+border: 2px solid #888888;
+color: #ffffff;
+
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+border-radius: 20px;
+
+padding: 1rem 1rem;
+max-width: 1000px;
+margin-top: 20px;
+}
+.aboutContent,
+#EducationGrid{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#skillGrid,
+#softGrid,
+#projectGrid{
+justify-content: center;
+}
+.JV,
+.BC{
+flex: 1;
+background: linear-gradient(to bottom right, #4a4a4a, #7a7a7a);
+border: 2px solid #666666;
+color: #f1f1f1;
+border-radius: 20px;
+padding-left: 10px;
+backdrop-filter: blur(12px); 
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+max-width: 500px;
+padding-bottom: 10px;
+}
+
+.PInfo{
+flex: 1;
+background: linear-gradient(to bottom right, #4a4a4a, #7a7a7a);
+border: 2px solid #666666;
+color: #f1f1f1;
+border-radius: 20px;
+padding-left: 10px;
+backdrop-filter: blur(12px); 
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+max-width: 270px;
+}
+.pIntro{
+  flex: 1; 
+  background: linear-gradient(to bottom right, #4a4a4a, #7a7a7a); /* subtle depth */
+  border: 2px solid #666666;
+  color: #f1f1f1;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding-left: 10px;
+  
+}
+.myskill,
+.mysoft{
+  flex: 1; 
+  background: linear-gradient(to bottom right, #4a4a4a, #7a7a7a); /* subtle depth */
+  border: 2px solid #666666;
+  color: #f1f1f1;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  
+}
+
+  
+.PInfo ul,
+.BC ul,
+.JV ul{
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+.PInfo ul li,
+.BC ul li,
+.JV ul li{
+  margin-bottom:8px;
+}
+
+#about h2,
+#education h2,
+#skills h2,
+#soft h2,
+#projects h2{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  align-self: flex-start; 
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Skills Grid */
+.myskill:hover,
+.PInfo:hover,
+.pIntro:hover,
+.BC:hover,
+.JV:hover,
+.PJ:hover,
+.mysoft:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  background: linear-gradient(to bottom right, #c0c0c0, #a9a9a9); /* light silver to dark silver */
+  border: 2px solid #b0b0b0;
+  color: #2a2a2a; /* dark text for contrast on silver */
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+
+  padding: 1rem 1rem;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.PJ {
+   flex: 1;
+  background: linear-gradient(to bottom right, #ffffff, #e6e6e6); /* light white to soft grey */
+  border: 2px solid #cccccc;
+  color: #1a1a1a; /* dark text for contrast */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+/* Footer */
+footer {
+  background: #212529;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+main{
+  background-image: url('../IMG/back2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
+}
+.link-button{
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 4px 4px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.link-button:hover {
+  background-color: #45a049;
+}
