@@ -5,8 +5,8 @@ const Education = [
     location: "138 Berg Ave, Heatherdale, Akasia, 0182",
     years: "2023 – Present",
     qualification: "Bachelor of Computing Degree (NQF level 8)",
-    link:"First year BC iTversity marks..pdf",
-    secondlink:"second year BC iTversity marks.pdf"
+    link:"https://belgiumcampusacza-my.sharepoint.com/:b:/g/personal/600819_student_belgiumcampus_ac_za/Ed_zmyYYsQhNioVrFBdIu4kB9yRwqfwmWBc5_58C53BSxQ?e=PF5Qzj",
+    secondlink:"https://belgiumcampusacza-my.sharepoint.com/:b:/g/personal/600819_student_belgiumcampus_ac_za/EVRLQuWzkz5HoIRbBLYMADMB1OmRDHvJbagz5pywc2GZmA?e=KWVqVO"
   },
   {
     id: "JV",
@@ -14,7 +14,7 @@ const Education = [
     location: "1072 Meyer St, Villieria, Pretoria, 0186",
     years: "2017 – 2021",
     qualification: "National Senior Certificate",
-    link:"CamScanner 2025-07-24 11.30.pdf"
+    link:"https://belgiumcampusacza-my.sharepoint.com/:b:/g/personal/600819_student_belgiumcampus_ac_za/EftmxX6dF8lDnMhhEKypsD8B12dYk7HyzHaOLY2XAou0_g?e=yX8tCV"
   }
 ];
 
